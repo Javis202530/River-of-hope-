@@ -89,3 +89,31 @@ body {
   padding: 15px;
   margin-top: 30px;
 }
+/* Aims Section */
+#aims {
+  background: #f0f8ff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#aims h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+#aims ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#aims ul li {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  }
