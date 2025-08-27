@@ -94,3 +94,7 @@ function App() {
 }
 
 export default App;
+header img {
+  display: block;
+  margin: 0 auto 1rem auto;
+}
