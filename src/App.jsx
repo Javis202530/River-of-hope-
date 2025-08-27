@@ -4,7 +4,15 @@ function App() {
   return (
     <div className="font-sans text-gray-800">
       {/* Header */}
-      <header className="bg-blue-600 text-white p-6 text-center shadow-md">
+      <header className="bg-blue-600 text-white p-6 text-center shadow-md"><header>
+  <img 
+    src="/logo.png" 
+    alt="River of Hope Foundation Logo" 
+    style={{ height: "80px", marginBottom: "10px" }} 
+  />
+  <h1>River of Hope Children's Foundation Uganda</h1>
+  <p>Giving hope to the needy through education, care, and love.</p>
+</header>
         <h1 className="text-3xl font-bold">River of Hope Children's Foundation Uganda</h1>
         <p className="mt-2 text-lg">Giving hope to the needy through education, care and love.</p>
       </header>
