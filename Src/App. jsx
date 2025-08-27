@@ -1,0 +1,33 @@
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Gallery from "./components/Gallery";
+import Aims from "./components/Aims";
+import Donate from "./components/Donate";
+import Store from "./components/Store";
+import Admin from "./components/Admin";
+import Login from "./components/Login";
+
+export default function App() {
+  const [page, setPage] = useState("home");
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  const renderPage = () => {
+    switch (page) {
+      case "about": return <About />;
+      case "gallery": return <Gallery />;
+      case "aims": return <Aims />;
+      case "donate": return <Donate />;
+      case "store": return <Store isAdmin={isAdmin} />;
+      case "admin": return isAdmin ? <Admin /> : <Login setIsAdmin={setIsAdmin} />;
+      default: return <h1 className="text-center text-3xl mt-10">Welcome to River of Hope Children’s Foundation Uganda</h1>;
+    }
+  };
+
+  return (
+    <div>
+      <Navbar setPage={setPage} isAdmin={isAdmin} setIsAdmin={setIsAdmin}/>
+      <div className="p-4">{renderPage()}</div>
+    </div>
+  );
+}
