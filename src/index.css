@@ -1,103 +1,96 @@
-/* Reset some defaults */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+import React from "react";
+import "./index.css";
+
+function App() {
+  return (
+    <>
+      {/* Header */}
+      <header>
+        <h1>River of Hope Children's Foundation Uganda</h1>
+        <p>Giving hope to the needy through education, care, and love.</p>
+      </header>
+
+      {/* About Us */}
+      <section>
+        <h2>About Us</h2>
+        <p>
+          River of Hope Children's Foundation Uganda was founded by{" "}
+          <strong>Javis Bbomboikka</strong>, supported by a sponsor from primary
+          school up to university. Today, as a Clinical Officer, he leads this
+          foundation to give back by helping children access{" "}
+          <strong>education, clothing, and food</strong>.
+        </p>
+      </section>
+
+      {/* Gallery */}
+      <section>
+        <h2>Gallery</h2>
+        <div className="gallery">
+          <img src="https://placehold.co/400x250?text=Photo+1" alt="Gallery 1" />
+          <img src="https://placehold.co/400x250?text=Photo+2" alt="Gallery 2" />
+          <img src="https://placehold.co/400x250?text=Photo+3" alt="Gallery 3" />
+        </div>
+      </section>
+
+      {/* Our Aims */}
+      <section>
+        <h2>Our Aims</h2>
+        <ul>
+          <li>Provide school fees and educational materials to needy children.</li>
+          <li>Offer food and clothing support for vulnerable families.</li>
+          <li>Create opportunities for children to showcase their talents.</li>
+          <li>Build a future of hope, dignity, and empowerment.</li>
+        </ul>
+      </section>
+
+      {/* Donate */}
+      <section>
+        <h2>Donate</h2>
+        <p>Support our mission by making a donation.</p>
+        <a
+          href="https://www.paypal.com/donate"
+          className="btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Donate with PayPal
+        </a>
+        <a
+          href="https://stripe.com"
+          className="btn"
+          target="_blank"
+          rel="noreferrer"
+          style={{ marginLeft: "1rem" }}
+        >
+          Donate with Card
+        </a>
+      </section>
+
+      {/* Store */}
+      <section>
+        <h2>Children's Creations Store</h2>
+        <p>Buy handmade items created by children. All funds support school fees.</p>
+        <div className="gallery">
+          <img
+            src="https://placehold.co/400x250?text=Handmade+Craft+1"
+            alt="Craft 1"
+          />
+          <img
+            src="https://placehold.co/400x250?text=Handmade+Craft+2"
+            alt="Craft 2"
+          />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <p>
+          © {new Date().getFullYear()} River of Hope Children's Foundation
+          Uganda. All Rights Reserved.
+        </p>
+      </footer>
+    </>
+  );
 }
 
-/* Body Styling */
-body {
-  background: #f9fafc;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background: linear-gradient(135deg, #0066cc, #0099ff);
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1.1rem;
-}
-
-/* Section Styling */
-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-section h2 {
-  color: #0066cc;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-section p, section li {
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
-}
-
-/* Gallery */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.gallery img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Buttons */
-button, .btn {
-  display: inline-block;
-  background: #0066cc;
-  color: white;
-  padding: 0.7rem 1.3rem;
-  margin-top: 1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-button:hover, .btn:hover {
-  background: #004c99;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  background: #f0f4f8;
-  color: #555;
-  font-size: 0.9rem;
-}
+export default App;
