@@ -1,0 +1,91 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header / Navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004aad;
+  color: white;
+  padding: 15px 30px;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e3f2fd;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section h2 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+/* Donate Section */
+.donate {
+  background: #fff3f3;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.donate-btn {
+  background: #ff4b4b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.donate-btn:hover {
+  background: #e33d3d;
+}
+
+/* Footer */
+.footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
