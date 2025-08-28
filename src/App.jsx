@@ -39,6 +39,7 @@ function App() {
         {/* Footer */}
         <Footer />
       </div>
+      import Footer from "./Components/Footer";
     </Router>
   );
 }
