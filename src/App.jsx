@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -36,9 +37,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-gray-800 text-white text-center p-4">
-          © {new Date().getFullYear()} River of Hope Children’s Foundation
-        </footer>
+        <Footer />
       </div>
     </Router>
   );
